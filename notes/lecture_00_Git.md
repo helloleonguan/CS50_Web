@@ -1,8 +1,8 @@
-# CS50 Web: Lcture 1 Git 
+# CS50 Web: Lcture 0 Git 
 
 ## Outline 
 * Git commands
-* HTML basics 
+* HTML/CSS basics 
 
 ### Version Control - Git 
 1. Benefits of Git: 
@@ -41,8 +41,28 @@
 	* `<form>`
 	* `<input type="" placeholder="" name="">`: text field - no end tag 
 	* `<button>`
-2. Document Object Model: a tree structure 
-3. CSS options
+	* `<div>` : a section of code;   
+	* `<span>`: a section of inline code;    
+	* can use an `id` or `class` attribute to name a tag; `id ` needs to be unique while the same `class` can be used multiple times. 
+2. Document Object Model: a tree structure
+
+### CSS 
+1. CSS options
 	* add `style=""` to tags
 	* add `<style>` tag to `<head>`
 	* `<link rel="stylesheet" href="***.css">` and have a separte file `***.css`
+2. CSS properties
+	* `padding` `margin` 
+	* `border`
+	* `height` `width`
+	* `font-family`: try to match the first font, otherwise, use the more common font specified after the 1st one.  
+	* `font-size` `font-weight` 
+	* `border-collapse`
+	* `text-align`
+3. for `id` and `class`: 
+	* `#top` is a style for `id = "top"`
+	* `.name` is a style for `class = "name"`
+
+### Deployment
+* use Github Pages to deploy websites
+* the process: on Github repo page -> go to Settings -> find the section called GitHub Pages -> choose the branch you want to display from the Source section -> click `Save` -> a URL will be generated for you -> Github Pages will be automatically updated 
