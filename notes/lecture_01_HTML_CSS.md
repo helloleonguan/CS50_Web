@@ -60,4 +60,17 @@ __Summary of CSS Selectors__
 
 ### Responsive Design
 * we want the website to be responsive on all kinds of devices. 
-* `<p class="screen-only">`:  
+* media printing resposnive example:  
+`<p class="screen-only">`  
+![](./img/media.png)  
+* responsive size: 
+![](./img/re-size.png)
+_showing "red" when the window is at least 500px in width. Otherwise, showing "blue"._
+* responsive content: 
+![](./img/re-content.png) 
+* rendering viewpoint size on different devices: 
+![](./img/meta_viewpoint.png)
+* `<flex-box>`: allowing contents to wrap around based on the width of the browser. 
+* __Bootstrap__: A CSS library. Add a `<link rel="stylesheet" href="URL">` to the `<head>`. It uses a 12-column systematic layout. 
+* classes: `col-lg-3` `col-sm-6` make sure the website is responsive on large/small devices. 
+* 
