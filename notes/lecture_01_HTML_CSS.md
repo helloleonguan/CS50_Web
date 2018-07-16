@@ -70,7 +70,19 @@ _showing "red" when the window is at least 500px in width. Otherwise, showing "b
 ![](./img/re-content.png) 
 * rendering viewpoint size on different devices: 
 ![](./img/meta_viewpoint.png)
-* `<flex-box>`: allowing contents to wrap around based on the width of the browser. 
-* __Bootstrap__: A CSS library. Add a `<link rel="stylesheet" href="URL">` to the `<head>`. It uses a 12-column systematic layout. 
-* classes: `col-lg-3` `col-sm-6` make sure the website is responsive on large/small devices. 
-* 
+* `<flex-box>`: allowing contents to wrap around based on the width of the browser. `display:flex` 
+* __Bootstrap__: A CSS library. Add a `<link rel="stylesheet" href="URL">` to the `<head>`. It uses a 12-column systematic layout. For example, `<class="col-3">`. 
+* classes: `<class="col-lg-3 col-sm-6">` make sure the website is responsive on both large and small devices. 
+* the more specific styling takes precedent. 
+* create alert messages - `<class="alert alert-primary">` 
+
+### Sass
+* an extension on CSS in a more powerful way. [Sass](https://sass-lang.com/)
+* you can define variables in Sass. 
+![](./img/sass.png)  
+* though you need to compile Sass file to a CSS file `>> sass file.scss file.css`
+* Sass allows for better nesting. 
+![](./img/sass2.png) 
+* Inheritance 
+![](./img/sass_inherit.png) 
+
