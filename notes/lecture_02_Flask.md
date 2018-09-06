@@ -25,3 +25,7 @@
 * block of HTML code can be introduced by Jinja2 syntax and then be inherited by other HTML files. 
 ![](./img/block_inh.png) 
 ![](./img/block_inh2.png) 
+* Look into `forms` dir to get a sense of POST request. 
+* store info - sessions: `from flask import session`: data dictionary specific for each user. 
+	* `notes` dir
+	* `session["notes"]`: user-specific sessions 
