@@ -31,4 +31,15 @@
 	* `SELECT origin, COUNT(*) FROM flights GROUP BY origin HAVING COUNT(*) > 1;`  
 	* `SELECT * FROM table1 JOIN table2 ON table1.id = table2.table1_id;` 
 
-### 
+### SQL Security Concerns 
+* __SQL Injection__:  usually occurs when you ask a user for input, like their username/userid, and instead of a name/id, the user gives you an SQL statement that you will unknowingly run on your database. Ans: constraints, escaping. 
+* Race Conditions: == contention. Ans: Transactions.  
+* SQL Transactions: BEGIN & COMMIT.  
+
+### SQL with Flask 
+* use sqlalchemy library 
+* when inserting, deleting, updating your DB, commit your changes. 
+* DB URL: `"postgresql://<username>:<password>@<server>:<port>/<database>"` 
+* `db.commit()`: only execute SQL commands right after this line. 
+* sqlalchemy will avoid SQL injection by escaping potentially dangerous characters by using placeholders and dictionary to form a query. 
+* read carefully over `airline0` & `airline1` folders. 
