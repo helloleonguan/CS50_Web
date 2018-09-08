@@ -2,6 +2,7 @@
 
 ## Outline
 * SQL Basics 
+* SQL with flask 
 
 ### PostgreSQL 
 * when creating a table, we need to decide what types of data it will hold. 
