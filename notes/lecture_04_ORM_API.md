@@ -22,4 +22,22 @@
 * `db.session.delete(obj)` 
 * `Flight.query.filter(Flight.origin != "Paris").all()` 
 * `db.session.query(Flight, Passenger).filter(Flight.id == Passenger.flight_id).all()`: join SQL query 
-* `db.relationship(...)`: relate 2 DB tables together 
+* `db.relationship(...)`: relate 2 DB tables together  
+
+### API 
+* protocols for communication between either different web applications or different parts of the same application. 
+* JSON: readable data format for data transfering. 
+![](./img/json.png) 
+* use URLs to access JSON API object. 
+* the HTTP request method type will correspond to the type of action we want to perform. 
+* HTTP methods (convention many APIs will follow):  
+![](./img/http_methods.png) 
+* `requests` library: handling interactions with HTTP requests. 
+* `requests.get(URL)`: getting the source code of the website. 
+* All request functions in the `requests` library: 
+![](./img/requests.png)  
+* `fixer.io`: an existing API on the website we can play with. 
+* Common Status Code for a HTTP request 
+![](./img/status_code.png) 
+* `jsonify`: a function in flask to convert dict to json. 
+* API Keys: with larger APIs, you may need to provide API key to make a request. In this way, we can then restrict the frequency of their requests to ensure no overloading on the servers. 
