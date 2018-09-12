@@ -3,7 +3,8 @@
 ## Outline
 * Client vs. Server
 * Javascript 
-* 
+* Ajax 
+* Web Sockets
 
 ### Client vs. Server 
 * flask/python on server while HTML/CSS/JS are mostly local on client computers. 
@@ -38,4 +39,16 @@
 ![](./img/JS_arrow_func3.png) 
 * this is referred to object before the function(). 
 ![](./img/JS_this.png) 
+* storing information - local storage:
+* `localStorage` is a variable in JS which can be used to store data even after closing the page. Most of the browsers support this variable. Namespace collisions will not occur for different domains.
 
+### Ajax 
+* It stands for asynchronous JS and XML. 
+* A technology we can use in order to get more information from a server even without needing to reload an entire new page. 
+
+### Web Sockets - Socket.IO
+* real-time communications 
+* broadcasting and receiving information 
+* `@socketio.on("str")`: decorator for listening to submit events from client to server. 
+* `emit("", {}, broadcast=True)`: broadcasting from server to all clients 
+* 
