@@ -6,6 +6,8 @@
 * Infinite Scrolling 
 * Hiding Contents  
 * Javascript Templating 
+* CSS Animation 
+* Scalable Vector Graphics (SVG)
 
 ### Single-Page Apps 
 * taking multi-page of HTMLs and combining them into one page. 
@@ -36,6 +38,25 @@
 ### Javascript Templating 
 * build templates in JS that allows us to write HTML code and then insert to DOM. 
 * `Handlebars`: one of such libraries 
-* src: `dice0`
+![](./img/handle_bars.png) 
+* Jinja requires a flask application server so that Jinja templates can be generated; JS templates are all on the client side. 
+* `#each`: helpers for looping over JS arrays. 
+* src: `dice0` `dice1` `dice2` `dice3` `posts2`
 
--- 48:53 
+### CSS Animation 
+* `@keyframes ***`: defining animations in CSS 
+![](./img/keyframes.png) 
+* intermediate steps: * percent through the animation
+![](./img/keyframes2.png) 
+* use JS to interact with CSS animation 
+![](./img/JS_playstate.png) 
+* Animation can be used to interact with JS events listeners. 
+![](./img/JS_animation_interactions.png) 
+* src: `animate0.html` `animate1.html` `animate2.html` `animate3.html` `posts3` `posts4` 
+
+### Scalable Vector Graphics (SVG)
+* `<svg>`: parent SVG tags in HTML
+* D3: JS library to create interactive graphs and charts. 
+* D3 also allows event listeners on SVG objects. 
+* D3 also allows for canvas painting with event listeners. 
+* src: `circle0.html` `circle1.html` `rect.html` `circle2.html` `circle3.html` `spotlight.html` `draw0.html` `draw1.html` `draw2.html` `draw2.js` 
