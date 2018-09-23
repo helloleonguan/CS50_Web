@@ -4,6 +4,10 @@
 * Basic Files
 * Databases
 * Template Rendering  
+* Admin Interface 
+* Named Routes 
+* Many-to-Many Relationships 
+* Authentication 
 
 ### Basics Files
 * `>>> django-admin startproject <projectname>`: initiate a Django project 
@@ -23,6 +27,7 @@
 * Remember to link your application URL file to Project URL file
 ![](./img/django_url.png) 
 * `>>> python3 manage.py runserver`: run the web app
+* src: `mysite`
 
 ### Databases 
 * defining a data class in `models.py` (or table in DB) 
@@ -38,4 +43,24 @@ _remember to save the vars you create by `var.save()`_
 ### Template Rendering 
 * create HTMLs in `app_name/templates/...` but when referencing it use `"app_name/file.html"` 
 
---38:00
+### Admin interface 
+* `admin.site.register(Model)`: registering models with admin site. 
+* `python3 manage.py createsuperuser` : creating a suoper user that would have access to the database. 
+* `../admin`: will be the web interface for the back-end DB system. 
+* It's an App but register all the models in the project. 
+
+### Named Routes
+* In `urls.py`, you can add an additional name to each URL for future reference s. 
+![](./img/django_named_urls.png) 
+
+### Many-to-Many Relationships 
+* by convention, we achieve this many-to-many relationships by creating a in-between table to  create a mapping between 2 or more models. 
+* the Django approach: 
+![](./img/django_many_to_many.png) 
+* src: `airline`
+
+### Authentication 
+* `ajango.contrib.auth`: where most of functions we can use. 
+* 
+* Django suppots session. 
+* src: `authentication`
