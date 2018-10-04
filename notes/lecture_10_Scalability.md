@@ -8,6 +8,7 @@
 * Autoscaling
 * Scaling Database 
 * Database Replication 
+* Caching 
 
 ### Benchmarking 
 * how much your server can handle within a given time. 
